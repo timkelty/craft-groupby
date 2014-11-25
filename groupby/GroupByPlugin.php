@@ -2,8 +2,6 @@
 
 namespace Craft;
 
-// require 'vendor/autoload.php';
-
 class GroupByPlugin extends BasePlugin
 {
     public function getName()
