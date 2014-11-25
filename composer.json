@@ -1,0 +1,10 @@
+{
+    "name": "fusionary/groupby-craft",
+    "authors": [
+        {
+            "name": "Tim Kelty",
+            "email": "tim@fusionary.com"
+        }
+    ],
+    "require": {}
+}
