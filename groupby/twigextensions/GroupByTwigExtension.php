@@ -2,11 +2,10 @@
 
 namespace Craft;
 
-use ICanBoogie\Inflector;
 use Twig_Extension;
 use Twig_Filter_Method;
 
-class GroupbyTwigExtension extends \Twig_Extension
+class GroupByTwigExtension extends \Twig_Extension
 {
     public $by;
     public $attrHandle;

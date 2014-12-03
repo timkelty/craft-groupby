@@ -31,9 +31,9 @@ class GroupByPlugin extends BasePlugin
 
     public function addTwigExtension()
     {
-        Craft::import('plugins.groupby.twigextensions.GroupbyTwigExtension');
+        Craft::import('plugins.groupby.twigextensions.GroupByTwigExtension');
 
-        return new GroupbyTwigExtension();
+        return new GroupByTwigExtension();
     }
 }
 
