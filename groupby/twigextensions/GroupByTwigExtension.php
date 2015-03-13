@@ -13,11 +13,6 @@ class GroupByTwigExtension extends \Twig_Extension
     public $groupKey = false;
     public $groups = array();
 
-    public function __construct()
-    {
-
-    }
-
     public function getName()
     {
         return 'Group By Twig Extension';
