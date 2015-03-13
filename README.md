@@ -5,7 +5,7 @@ A Craft plugin (Twig filter) for grouping entries.
 ## Usage
 
 * `param 1`: Attribute to group by, in dot notation
-* `param 2`: Group un-grouped entries by a key. Defaults to `false`, meaning un-grouped items are removed.
+* `param 2`: Group un-grouped entries by a key. Defaults to `false`, meaning un-grouped items are removed. These entries are always added to the end of the returned array.
 
 ```
 {% set allEntries = craft.entries.section('blog').find() %}
@@ -21,7 +21,7 @@ In it's simplest form, the `groupBy` filter works like [Craft's native `group` f
 {% set allEntriesByYear = allEntries|groupBy('postDate.year') %}
 ```
 
-However, `groupBy` can group by nested objects:
+However, `groupBy` can alos group by nested objects:
 
 ```
 {% set allEntriesByCat = allEntries|groupBy('myCategoryField.slug') %}
