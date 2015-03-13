@@ -81,14 +81,17 @@ class GroupByTwigExtension extends \Twig_Extension
                 if (!empty($this->attrHandle)) {
                     $this->attrHandle = array_shift($this->by);
 
-                    // Use DateTime methods, not props
-                    if ($context instanceof DateTime) {
-                        $attr = $context->{$this->attrHandle}();
-                    } else {
-                        $attr = $context->{$this->attrHandle};
-                    }
+                    if ($this->attrHandle) {
 
-                    $this->_toGroup($element, $attr);
+                        // Use DateTime methods, not props
+                        if ($context instanceof DateTime) {
+                            $attr = $context->{$this->attrHandle}();
+                        } else {
+                            $attr = $context->{$this->attrHandle};
+                        }
+
+                        $this->_toGroup($element, $attr);
+                    }
                 }
             }
         } elseif ($this->unGrouped !== false) {
