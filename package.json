@@ -1,6 +1,6 @@
 {
   "name": "groupby-craft",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Craft plugin (Twig filter) for grouping entries.",
   "repository": {
     "type": "git",
