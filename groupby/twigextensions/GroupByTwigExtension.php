@@ -9,9 +9,9 @@ class GroupByTwigExtension extends \Twig_Extension
 {
     public $by;
     public $attrHandle;
-    public $unGrouped = false;
-    public $groupKey = false;
-    public $groups = array();
+    public $unGrouped;
+    public $groupKey;
+    public $groups;
 
     public function getName()
     {
@@ -35,6 +35,8 @@ class GroupByTwigExtension extends \Twig_Extension
     public function groupBy($elements, $by, $unGrouped = false)
     {
         $this->unGrouped = $unGrouped;
+        $this->groupKey = false;
+        $this->groups = array();
 
         foreach ($elements as $element) {
             $this->by = explode('.', $by);
