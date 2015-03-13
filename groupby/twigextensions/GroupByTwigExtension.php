@@ -7,11 +7,11 @@ use Twig_Filter_Method;
 
 class GroupByTwigExtension extends \Twig_Extension
 {
-    public $by;
-    public $attrHandle;
-    public $unGrouped;
-    public $groupKey;
-    public $groups;
+    private $by;
+    private $attrHandle;
+    private $unGrouped;
+    private $groupKey;
+    private $groups;
 
     public function getName()
     {
