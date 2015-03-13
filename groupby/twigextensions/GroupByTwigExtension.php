@@ -55,7 +55,7 @@ class GroupByTwigExtension extends \Twig_Extension
         }
 
         // Put unGrouped at the end
-        if ($unGrouped) {
+        if ($unGrouped && isset($this->groups[$unGrouped])) {
             $unGroupedItems = $this->groups[$unGrouped];
             unset($this->groups[$unGrouped]);
             $this->groups[$unGrouped] = $unGroupedItems;
