@@ -54,6 +54,13 @@ class GroupByTwigExtension extends \Twig_Extension
             $group = array_unique($group);
         }
 
+        // Put unGrouped at the end
+        if ($unGrouped) {
+            $unGroupedItems = $this->groups[$unGrouped];
+            unset($this->groups[$unGrouped]);
+            $this->groups[$unGrouped] = $unGroupedItems;
+        }
+
         return $this->groups;
     }
 
