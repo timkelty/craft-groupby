@@ -32,7 +32,7 @@ And you can even get really crazy if you want:
 
 ```
 {% set allEntriesByNestedCat = allEntries|groupBy('myEntriesField.myCategoryField.slug') %}
-{% set allEntriesByMatrix = allEntries|groupBy('myMatrix.myEntriesField.slug') %}
+{% set allEntriesByMatrix = allEntries|groupBy('myMatrix.myEntriesField.dateField.localeDate') %}
 ```
 
 ## Discussion
