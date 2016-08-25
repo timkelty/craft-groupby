@@ -1,15 +1,14 @@
 {
-  "name": "groupby-craft",
-  "version": "1.0.7",
-  "description": "A Craft plugin (Twig filter) for grouping entries.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/timkelty/groupby-craft.git"
-  },
-  "author": "Tim Kelty",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/timkelty/groupby-craft/issues"
-  },
-  "homepage": "https://github.com/timkelty/groupby-craft"
+    "name": "timkelty/craft-groupby",
+    "description": "A Craft plugin (Twig filter) for grouping entries.",
+    "authors": [
+		{
+			"name": "Tim Kelty",
+			"homepage": "http://fusionary.com/"
+		}
+	],
+    "type": "craft-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
 }
