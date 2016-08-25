@@ -1,10 +1,14 @@
 {
-    "name": "fusionary/groupby-craft",
-    "authors": [
-        {
-            "name": "Tim Kelty",
-            "email": "tim@fusionary.com"
-        }
-    ],
-    "require": {}
+  "name": "timkelty/craft-groupby",
+  "description": "A Craft plugin (Twig filter) for grouping entries.",
+  "authors": [
+    {
+      "name": "Tim Kelty",
+      "homepage": "http://fusionary.com/"
+    }
+  ],
+  "type": "craft-plugin",
+  "require": {
+    "composer/installers": "~1.0"
+  }
 }
