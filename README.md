@@ -21,7 +21,7 @@ In it's simplest form, the `groupBy` filter works like [Craft's native `group` f
 {% set allEntriesByYear = allEntries|groupBy('postDate.year') %}
 ```
 
-However, `groupBy` can alos group by nested objects:
+However, `groupBy` can also group by nested objects:
 
 ```
 {% set allEntriesByCat = allEntries|groupBy('myCategoryField.slug') %}
