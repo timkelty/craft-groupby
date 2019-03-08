@@ -2,6 +2,8 @@
 
 A Craft plugin (Twig filter) for grouping entries.
 
+Note: I have no plan to update this plugin for Craft 3. See https://github.com/sjelfull/craft3-collections, which can do the same thing, but also much more.
+
 ## Usage
 
 * `param 1`: Attribute to group by, in dot notation
